@@ -37,9 +37,9 @@ O jogo oferece uma experiência dinâmica com diversas mecânicas:
 **Tela de "Game Over":** Ao perder toda a vida ou ser alcançado pelo Caçador, uma imagem temática de "Game Over" é exibida para imersão (Certifique-se de ter o arquivo you died dark souls.jpg na raiz do projeto).
 
 ## *🎮 Como Jogar*
-*Início:* Ao executar o jogo, você será recebido com uma introdução narrativa e um menu principal.
 ### *Menu Principal:*
-*1. Jogar:* Inicia uma nova partida. Você poderá escolher a dificuldade e inserir seu nome de jogador.
+**Início:** Ao executar o jogo, você será recebido com uma introdução narrativa e um menu principal.
+**1. Jogar:** Inicia uma nova partida. Você poderá escolher a dificuldade e inserir seu nome de jogador.
 *2. Instruções:* Exibe as regras do jogo e a legenda dos símbolos do labirinto (veja abaixo).
 *3. Ranking:* Permite visualizar as pontuações dos jogadores para cada nível de dificuldade.
 *4. Sair:* Encerra o jogo.
