@@ -94,45 +94,74 @@ O jogo foi estruturado com base nos princípios da Programação Orientada a Obj
 ### *Main.java*
 Esta é a classe principal que orquestra todo o jogo, agindo como o controlador central da aplicação. Ela contém o método main, que é o ponto de entrada.
 
-*Gerenciamento do Fluxo do Jogo:* Controla o ciclo de vida do jogo, desde a exibição do menu inicial até a gestão da partida, incluindo a entrada do jogador, a atualização do estado do jogo e a verificação das condições de vitória/derrota.
-*Interface do Usuário (HUD):* É responsável por exibir o labirinto e o Head-Up Display (HUD), que fornece informações cruciais sobre o estado do jogador (vida, objetivos, pontuação, chaves). O uso de códigos ANSI para colorir o labirinto demonstra um cuidado com a experiência visual, mesmo em um ambiente de console.
-*Lógica de Dificuldade:* Define dinamicamente a quantidade de objetivos e caçadores com base na escolha de dificuldade do jogador, ajustando a complexidade do jogo.
-*Sistema de Pontuação e Ranking:* Calcula e atualiza a pontuação em tempo real, com base nas interações do jogador. Além disso, gerencia a persistência dos dados do ranking, salvando as pontuações em arquivos de texto (ranking_facil.txt, ranking_medio.txt, ranking_dificil.txt) e permitindo a visualização ordenada das pontuações.
-*"Mundo Invertido":* Implementa a lógica para o modo secreto, alterando as regras de interação com tesouros/perigos e invertendo os comandos de movimento, adicionando uma camada extra de desafio e surpresa.
-*Integração com o Sistema Operacional:* A função abrirImagem demonstra a capacidade de interagir com o ambiente externo (sistema de arquivos do sistema operacional) para exibir recursos visuais.
-Aventureiro.java
-Esta classe representa o jogador, encapsulando todo o seu estado e comportamento no labirinto.
+**Gerenciamento do Fluxo do Jogo:** Controla o ciclo de vida do jogo, desde a exibição do menu inicial até a gestão da partida, incluindo a entrada do jogador, a atualização do estado do jogo e a verificação das condições de vitória/derrota.
+**Interface do Usuário (HUD):** É responsável por exibir o labirinto e o Head-Up Display (HUD), que fornece informações cruciais sobre o estado do jogador (vida, objetivos, pontuação, chaves). O uso de códigos ANSI para colorir o labirinto demonstra um cuidado com a experiência visual, mesmo em um ambiente de console.
+
+**Lógica de Dificuldade:** Define dinamicamente a quantidade de objetivos e caçadores com base na escolha de dificuldade do jogador, ajustando a complexidade do jogo.
+
+**Sistema de Pontuação e Ranking:** Calcula e atualiza a pontuação em tempo real, com base nas interações do jogador. Além disso, gerencia a persistência dos dados do ranking, salvando as pontuações em arquivos de texto (ranking_facil.txt, ranking_medio.txt, ranking_dificil.txt) e permitindo a visualização ordenada das pontuações.
+
+**"Mundo Invertido":** Implementa a lógica para o modo secreto, alterando as regras de interação com tesouros/perigos e invertendo os comandos de movimento, adicionando uma camada extra de desafio e surpresa.
+
+**Integração com o Sistema Operacional:** A função abrirImagem demonstra a capacidade de interagir com o ambiente externo (sistema de arquivos do sistema operacional) para exibir recursos visuais.
+
+**Aventureiro.java:** Esta classe representa o jogador, encapsulando todo o seu estado e comportamento no labirinto.
 
 ### *Atributos Fundamentais:*
-*nome:* Identificação do jogador.
-*linha, coluna:* Coordenadas atuais do aventureiro, representando sua posição no mapa.
-*vida:* Pontos de vida do aventureiro, um atributo crucial para a sobrevivência.
-*objetivosAlcancados:* Contador dos objetivos completados, rastreando o progresso do jogador.
-*chaves:* Contagem de chaves coletadas, necessárias para interagir com portas.
-*tesourosColetados:* Uma lista para registrar os tipos de tesouros coletados, impactando a pontuação e a recuperação de vida.
+**nome:** Identificação do jogador.
+
+**linha, coluna:** Coordenadas atuais do aventureiro, representando sua posição no mapa.
+
+**vida:** Pontos de vida do aventureiro, um atributo crucial para a sobrevivência.
+
+**objetivosAlcancados:** Contador dos objetivos completados, rastreando o progresso do jogador.
+
+**chaves:** Contagem de chaves coletadas, necessárias para interagir com portas.
+
+**tesourosColetados:** Uma lista para registrar os tipos de tesouros coletados, impactando a pontuação e a recuperação de vida.
+
 ### *Métodos de Interação e Modificação de Estado:*
-*mover(String direcao, int maxTamanho):* Permite ao aventureiro se deslocar pelo labirinto, com validação de limites.
-*coletarTesouro() / coletarTesouroRaro():* Métodos que modelam a ação de coletar itens, aplicando os bônus de vida e pontuação.
-*receberDano(int dano):* Lida com a perda de vida do aventureiro, um aspecto central da mecânica de sobrevivência.
-*alcançarObjetivo():* Atualiza o progresso do jogador ao atingir um objetivo.
-*coletarChave() e usarChave():* Gerenciam o inventário de chaves e a interação com portas.
-*voltarPara(int linhaAntiga, int colunaAntiga):* Permite o retrocesso em caso de ações bloqueadas (como portas sem chave), um detalhe importante para a jogabilidade.
-*Encapsulamento:* Todos os atributos são privados, e o acesso e modificação são feitos através de métodos getter e setter, garantindo o controle sobre o estado do objeto Aventureiro.
-*Labirinto.java:* Esta classe é responsável pela geração procedural e pela representação da estrutura do labirinto, atuando como o "mundo" do jogo.
-*Constantes de Configuração:* Define o tamanho do labirinto (TAM) e a quantidade inicial de cada tipo de elemento (objetivos, tesouros, perigos, chaves, portas), permitindo fácil ajuste dos parâmetros do jogo.
-*Estrutura de Dados do Labirinto:* Utiliza um ArrayList de ArrayList de Character (estrutura) para representar o mapa 2D do labirinto, onde cada caractere simboliza um elemento específico (ex: 'A' para aventureiro, '.' para espaço vazio). Essa escolha de estrutura permite a manipulação dinâmica do mapa.
+
+**mover(String direcao, int maxTamanho):** Permite ao aventureiro se deslocar pelo labirinto, com validação de limites.
+
+**coletarTesouro() / coletarTesouroRaro():** Métodos que modelam a ação de coletar itens, aplicando os bônus de vida e pontuação.
+
+**receberDano(int dano):** Lida com a perda de vida do aventureiro, um aspecto central da mecânica de sobrevivência.
+
+**alcançarObjetivo():** Atualiza o progresso do jogador ao atingir um objetivo.
+
+**coletarChave() e usarChave():** Gerenciam o inventário de chaves e a interação com portas.
+
+**voltarPara(int linhaAntiga, int colunaAntiga):** Permite o retrocesso em caso de ações bloqueadas (como portas sem chave), um detalhe importante para a jogabilidade.
+
+**Encapsulamento:** Todos os atributos são privados, e o acesso e modificação são feitos através de métodos getter e setter, garantindo o controle sobre o estado do objeto Aventureiro.
+
+**Labirinto.java:** Esta classe é responsável pela geração procedural e pela representação da estrutura do labirinto, atuando como o "mundo" do jogo.
+
+**Constantes de Configuração:** Define o tamanho do labirinto (TAM) e a quantidade inicial de cada tipo de elemento (objetivos, tesouros, perigos, chaves, portas), permitindo fácil ajuste dos parâmetros do jogo.
+
+**Estrutura de Dados do Labirinto:** Utiliza um ArrayList de ArrayList de Character (estrutura) para representar o mapa 2D do labirinto, onde cada caractere simboliza um elemento específico (ex: 'A' para aventureiro, '.' para espaço vazio). Essa escolha de estrutura permite a manipulação dinâmica do mapa.
 
 ### *Geração Procedural de Elementos:*
 Métodos como gerarLabirinto(), adicionarObjetivos(), adicionarTesouros(), etc., utilizam a classe Random para posicionar os elementos de forma aleatória, garantindo que cada partida seja única. A lógica de verificação de células vazias antes de posicionar elementos garante a integridade do mapa.
-*Renderização do Labirinto:* O método imprimirLabirinto() é crucial para a interface textual, exibindo o estado atual do labirinto com a ajuda de códigos de cor ANSI, melhorando a clareza e a imersão. É importante notar que a renderização colorida depende do suporte a códigos ANSI do terminal onde o jogo é executado.
-*Isolamento da Lógica do Mapa:* O Labirinto concentra toda a lógica de criação e manipulação da estrutura do mapa, abstraindo esses detalhes das outras classes.
-*Cacador.java:* representa o antagonista do jogo, o Caçador, e sua inteligência artificial de perseguição.
+
+**Renderização do Labirinto:** O método imprimirLabirinto() é crucial para a interface textual, exibindo o estado atual do labirinto com a ajuda de códigos de cor ANSI, melhorando a clareza e a imersão. É importante notar que a renderização colorida depende do suporte a códigos ANSI do terminal onde o jogo é executado.
+
+**Isolamento da Lógica do Mapa:** O Labirinto concentra toda a lógica de criação e manipulação da estrutura do mapa, abstraindo esses detalhes das outras classes.
+
+**Cacador.java:** representa o antagonista do jogo, o Caçador, e sua inteligência artificial de perseguição.
 
 ### *Atributos de Estado:*
-*linha, coluna:* Posição atual do Caçador.
-*ultimoCaractere:* Um atributo-chave para simular a camuflagem do Caçador. Ele armazena o caractere original da célula antes de o Caçador se mover para ela, permitindo que a célula seja restaurada quando ele se afasta, criando a ilusão de que ele se "mistura" com o ambiente.
-*Lógica de Movimento Autônomo (mover):* Este método implementa um algoritmo simples de perseguição. O Caçador tenta se mover em direção ao aventureiro (priorizando a linha e depois a coluna), mas com validações para evitar colisões com paredes ou outros elementos que não podem ser ocupados.
-*Interação com o Mapa:* O Caçador modifica diretamente a estrutura do mapa (passado por parâmetro) para atualizar sua própria posição e restaurar o caractere anterior, demonstrando como diferentes objetos podem colaborar e modificar um estado compartilhado.
-*Tesouro.java e Perigo.java*: Estas classes representam os elementos interativos do labirinto.
-*Modelagem de Entidades:* Ambas as classes modelam entidades simples do jogo, encapsulando seus atributos (linha, coluna, valor/dano).
-*Métodos Estáticos de Geração:* A decisão de usar métodos estáticos (gerarTesourosComuns, gerarTesourosRaros, gerarPerigos) para adicionar esses elementos ao mapa na classe Main é uma escolha de design que centraliza a lógica de preenchimento do labirinto. Isso indica que a responsabilidade de criar e posicionar esses elementos não é de instâncias individuais de Tesouro ou Perigo, mas sim uma função utilitária global para o processo de geração do labirinto.
+**linha, coluna:** Posição atual do Caçador.
+
+**ultimoCaractere:** Um atributo-chave para simular a camuflagem do Caçador. Ele armazena o caractere original da célula antes de o Caçador se mover para ela, permitindo que a célula seja restaurada quando ele se afasta, criando a ilusão de que ele se "mistura" com o ambiente.
+
+**Lógica de Movimento Autônomo (mover):** Este método implementa um algoritmo simples de perseguição. O Caçador tenta se mover em direção ao aventureiro (priorizando a linha e depois a coluna), mas com validações para evitar colisões com paredes ou outros elementos que não podem ser ocupados.
+
+**Interação com o Mapa:** O Caçador modifica diretamente a estrutura do mapa (passado por parâmetro) para atualizar sua própria posição e restaurar o caractere anterior, demonstrando como diferentes objetos podem colaborar e modificar um estado compartilhado.
+
+**Tesouro.java e Perigo.java**: Estas classes representam os elementos interativos do labirinto.
+
+**Modelagem de Entidades:** Ambas as classes modelam entidades simples do jogo, encapsulando seus atributos (linha, coluna, valor/dano).
+
+**Métodos Estáticos de Geração:** A decisão de usar métodos estáticos (gerarTesourosComuns, gerarTesourosRaros, gerarPerigos) para adicionar esses elementos ao mapa na classe Main é uma escolha de design que centraliza a lógica de preenchimento do labirinto. Isso indica que a responsabilidade de criar e posicionar esses elementos não é de instâncias individuais de Tesouro ou Perigo, mas sim uma função utilitária global para o processo de geração do labirinto.
