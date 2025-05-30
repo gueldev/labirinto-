@@ -39,32 +39,55 @@ O jogo oferece uma experiência dinâmica com diversas mecânicas:
 ## *🎮 Como Jogar*
 ### *Menu Principal:*
 **Início:** Ao executar o jogo, você será recebido com uma introdução narrativa e um menu principal.
+
 **1. Jogar:** Inicia uma nova partida. Você poderá escolher a dificuldade e inserir seu nome de jogador.
-*2. Instruções:* Exibe as regras do jogo e a legenda dos símbolos do labirinto (veja abaixo).
-*3. Ranking:* Permite visualizar as pontuações dos jogadores para cada nível de dificuldade.
-*4. Sair:* Encerra o jogo.
+
+**2. Instruções:** Exibe as regras do jogo e a legenda dos símbolos do labirinto (veja abaixo).
+
+**3. Ranking:** Permite visualizar as pontuações dos jogadores para cada nível de dificuldade.
+
+**4. Sair:** Encerra o jogo.
+
 ## *Movimentação:*
 Durante o jogo, você verá o labirinto e seu HUD (indicadores de vida, objetivos, pontuação, etc.). Para se mover, digite:
-w para cima
-s para baixo
-a para esquerda
-d para direita
-*Atenção:* No "Mundo Invertido", esses comandos são invertidos! (ex: w move para baixo, s move para cima, etc.)
-*Coleta de Itens:* Simplesmente mova-se para a célula de um item para coletá-lo ou interagir com ele.
-*Vitória:* Alcance o número de objetivos necessários para a dificuldade escolhida.
-*Derrota:* Sua vida chega a zero ou o Caçador o alcança.
-*Legenda do Labirinto no Console:* O jogo utiliza códigos de escape ANSI para exibir o labirinto com cores e formatação no terminal. Para uma visualização correta das cores, é necessário que o terminal (ou console) onde o jogo é executado tenha suporte a ANSI. Em alguns ambientes (como visores de texto simples ou ao colar a saída diretamente em plataformas como GitHub sem tratamento), você pode ver caracteres "estranhos" ou a falta de formatação.
 
-*Aqui está a legenda dos símbolos como eles são exibidos no jogo (com as cores que você verá em um terminal compatível):*
-*'A'* = Aventureiro (Azul)
-*'T'* = Tesouro Comum (Verde)
-*'P'* = Perigo (Vermelho)
-*'X'* = Objetivo (Amarelo)
-*'R'* = Tesouro Raro (Roxo)
-*'K'* = Chave (Ciano)
-*'C'* = Caçador (Branco)
-*'#'* Porta (Cor Padrão do Terminal)
-*'.'* = Caminho Livre (Cor Padrão do Terminal)
+**w para cima**
+
+**s para baixo**
+
+**a para esquerda**
+
+**d para direita**
+
+**Atenção:** No "Mundo Invertido", esses comandos são invertidos! (ex: w move para baixo, s move para cima, etc.)
+
+**Coleta de Itens:** Simplesmente mova-se para a célula de um item para coletá-lo ou interagir com ele.
+
+**Vitória:** Alcance o número de objetivos necessários para a dificuldade escolhida.
+
+**Derrota:** Sua vida chega a zero ou o Caçador o alcança.
+
+**Legenda do Labirinto no Console:** O jogo utiliza códigos de escape ANSI para exibir o labirinto com cores e formatação no terminal. Para uma visualização correta das cores, é necessário que o terminal (ou console) onde o jogo é executado tenha suporte a ANSI. Em alguns ambientes (como visores de texto simples ou ao colar a saída diretamente em plataformas como GitHub sem tratamento), você pode ver caracteres "estranhos" ou a falta de formatação.
+
+**Aqui está a legenda dos símbolos como eles são exibidos no jogo (com as cores que você verá em um terminal compatível):**
+**'A'** = Aventureiro (Azul)
+
+**'T'** = Tesouro Comum (Verde)
+
+**'P'** = Perigo (Vermelho)
+
+**'X'** = Objetivo (Amarelo)
+
+**'R'** = Tesouro Raro (Roxo)
+
+**'K'** = Chave (Ciano)
+
+**'C'** = Caçador (Branco)
+
+**'#'** Porta (Cor Padrão do Terminal)
+
+**'.'** = Caminho Livre (Cor Padrão do Terminal)
+
 ## ⚙️ *Lógica de Programação e Estrutura do Código*
 O jogo foi estruturado com base nos princípios da Programação Orientada a Objetos (POO) em Java. Essa abordagem permitiu uma modularização clara do código, separando responsabilidades entre as entidades do jogo, o que facilita a manutenção, a escalabilidade e a compreensão de cada componente individualmente.
 
