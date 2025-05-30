@@ -10,10 +10,14 @@ O objetivo do herói é alcançar os "X", Templos Sagrados que selam o poder do 
 O jogo oferece uma experiência dinâmica com diversas mecânicas:
 
 *Labirinto Gerado Aleatoriamente:* A cada nova partida, um labirinto único é criado, garantindo rejogabilidade.
+
 *Múltiplos Níveis de Dificuldade:* Escolha entre Fácil, Médio e Difícil, que ajustam o número de objetivos a serem alcançados e a quantidade de Caçadores no labirinto.
+
 *Sistema de Vida e Pontuação:* Monitore sua vida e pontuação em tempo real, que aumentam ou diminuem conforme suas ações no labirinto.
-Coleta de Itens:
+
+*Coleta de Itens:*
 *Tesouros Comuns (T):* Concedem +5 pontos e recuperam 5 de vida.
+
 *Tesouros Raros (R):* Concedem +50 pontos e recuperam 50 de vida, sendo cruciais para sua sobrevivência.
 *Chaves (K):* Permitem abrir portas trancadas, concedendo +30 pontos ao serem coletadas e +100 pontos ao serem usadas para abrir uma porta.
 *Perigos (P):* Armadilhas que causam -10 pontos e 10 de dano à sua vida. Cuidado, o Caçador pode se disfarçar como um perigo!
