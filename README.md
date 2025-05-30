@@ -9,24 +9,33 @@ O objetivo do herói é alcançar os "X", Templos Sagrados que selam o poder do 
 ### ✨ *Funcionalidades do Jogo*
 O jogo oferece uma experiência dinâmica com diversas mecânicas:
 
-*Labirinto Gerado Aleatoriamente:* A cada nova partida, um labirinto único é criado, garantindo rejogabilidade.
+**Labirinto Gerado Aleatoriamente:** A cada nova partida, um labirinto único é criado, garantindo rejogabilidade.
 
-*Múltiplos Níveis de Dificuldade:* Escolha entre Fácil, Médio e Difícil, que ajustam o número de objetivos a serem alcançados e a quantidade de Caçadores no labirinto.
+**Múltiplos Níveis de Dificuldade:** Escolha entre Fácil, Médio e Difícil, que ajustam o número de objetivos a serem alcançados e a quantidade de Caçadores no labirinto.
 
-*Sistema de Vida e Pontuação:* Monitore sua vida e pontuação em tempo real, que aumentam ou diminuem conforme suas ações no labirinto.
+**Sistema de Vida e Pontuação:** Monitore sua vida e pontuação em tempo real, que aumentam ou diminuem conforme suas ações no labirinto.
 
-*Coleta de Itens:*
-*Tesouros Comuns (T):* Concedem +5 pontos e recuperam 5 de vida.
+**Coleta de Itens:**
+**Tesouros Comuns (T):** Concedem +5 pontos e recuperam 5 de vida.
 
-*Tesouros Raros (R):* Concedem +50 pontos e recuperam 50 de vida, sendo cruciais para sua sobrevivência.
-*Chaves (K):* Permitem abrir portas trancadas, concedendo +30 pontos ao serem coletadas e +100 pontos ao serem usadas para abrir uma porta.
-*Perigos (P):* Armadilhas que causam -10 pontos e 10 de dano à sua vida. Cuidado, o Caçador pode se disfarçar como um perigo!
-*Objetivos (X):* Locais a serem alcançados para progredir no jogo. A quantidade de objetivos necessários varia com a dificuldade.
-*Portas (#):* Barreiras que exigem uma chave para serem abertas.
-*Caçador (C):* Um inimigo que persegue o jogador, se misturando com os perigos. Se ele o alcançar, o jogo termina.
-*Modo "Mundo Invertido":* Uma funcionalidade secreta ativada por um comando específico (mudar), que inverte a natureza dos tesouros e perigos, e altera os comandos de movimento. Cuidado: o caçador no mundo invertido é imprevisível.
-*Ranking de Pontuações:* Suas pontuações são salvas em arquivos de ranking específicos para cada dificuldade, permitindo que você compare seu desempenho com outros jogadores.
-*Tela de "Game Over":* Ao perder toda a vida ou ser alcançado pelo Caçador, uma imagem temática de "Game Over" é exibida para imersão (Certifique-se de ter o arquivo you died dark souls.jpg na raiz do projeto).
+**Tesouros Raros (R):** Concedem +50 pontos e recuperam 50 de vida, sendo cruciais para sua sobrevivência.
+
+**Chaves (K):** Permitem abrir portas trancadas, concedendo +30 pontos ao serem coletadas e +100 pontos ao serem usadas para abrir uma porta.
+
+**Perigos (P):** Armadilhas que causam -10 pontos e 10 de dano à sua vida. Cuidado, o Caçador pode se disfarçar como um perigo
+
+**Objetivos (X):** Locais a serem alcançados para progredir no jogo. A quantidade de objetivos necessários varia com a dificuldade.
+
+**Portas (#):** Barreiras que exigem uma chave para serem abertas.
+
+**Caçador (C):** Um inimigo que persegue o jogador, se misturando com os perigos. Se ele o alcançar, o jogo termina.
+
+**Modo "Mundo Invertido":** Uma funcionalidade secreta ativada por um comando específico (mudar), que inverte a natureza dos tesouros e perigos, e altera os comandos de movimento. Cuidado: o caçador no mundo invertido é imprevisível.
+
+**Ranking de Pontuações:** Suas pontuações são salvas em arquivos de ranking específicos para cada dificuldade, permitindo que você compare seu desempenho com outros jogadores.
+
+**Tela de "Game Over":** Ao perder toda a vida ou ser alcançado pelo Caçador, uma imagem temática de "Game Over" é exibida para imersão (Certifique-se de ter o arquivo you died dark souls.jpg na raiz do projeto).
+
 ## *🎮 Como Jogar*
 *Início:* Ao executar o jogo, você será recebido com uma introdução narrativa e um menu principal.
 ### *Menu Principal:*
